@@ -2,7 +2,7 @@ const fs            = require('fs');
 const urlExists     = require("url-exists");
 const { scrap }     = require("./scrap.module");
 
-typed_url = "goo000asdfadsgle.com";
+typed_url = "gafdasdfasdfoogle.com";
 
 if (typed_url.includes('http')) {
     url = typed_url;
@@ -13,7 +13,7 @@ else {
 
 urlExists(url, function(err, exists) {
     if (exists) {
-        console.log( url + "exist!");
+        console.log( url + " exist!");
     } else {
         throw ( url +  ' does not exist!' );
     }
